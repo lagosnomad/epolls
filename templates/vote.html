@@ -1,0 +1,234 @@
+																<!DOCTYPE HTML>
+																<html>
+																	<head>
+																		<title>E-Polls | Home </title>
+																		<meta charset="utf-8" />
+																		<meta name="viewport" content="width=device-width, initial-scale=1" />
+																		<script src="{{url_for('static', filename='/js/ie/html5shiv.js') }}"></script>
+																		<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.css') }}">
+																		<link rel="stylesheet" href="{{url_for('static', filename='css/main.css') }}">
+																		<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css') }}">
+																		<link rel="stylesheet" href="{{url_for('static', filename='css/font-awesome.css') }}">
+																		</head>
+																	<body id="top">
+																
+																		<!-- Header -->
+																			<header id="header">
+																				<div class="content">
+																					<h1><a href="/">E-Polls</a> - <a href="/vote">Vote<a/></h1>
+																								{% for message in get_flashed_messages() %}
+																												<p style="color: #cd1076;">{{message}}</p>
+																								{% endfor %}
+
+																					<ul class="actions">
+																						<li><a href="/results" class="button special icon fa-file">Results</a></li>
+																						<li><a href="#vote" class="button icon fa-chevron-down scrolly">Vote</a></li>
+																					</ul>
+																				</div>
+																				<div class="image phone"><div class="inner"><img src="{{url_for('static', filename='img/epolls-vote.png') }}" alt="epolls-vote" /></div></div>
+																			</header>
+																
+																
+																
+																				<section id="vote" class="wrapper">
+																				<div class="inner">
+																					<section>
+																						<form method="post" action="">
+																							<div class="row uniform">
+																           
+																											<div class="6u">
+																                <div class="select-wrapper">
+																                    <select required="true" name="president">
+																																        <option value=""> - President - </option>
+																																        <option value="jod">John Doe</option>
+																																								<option value="jan">Jane Doe</option>
+																																				</select>
+																																</div>
+																											</div>
+																											
+																											<div class="6u">
+																                <div class="select-wrapper">
+																                    <select required="true" name="vpadmin">
+																																        <option value=""> - V.P Admin - </option>
+																																        <option value="vpn">Vladmin Puttin</option>
+																																								<option value="bo">Barrack Obama</option>
+																																				</select>
+																																</div>
+																											</div>
+																											
+																											<div class="6u">
+																                <div class="select-wrapper">
+																                    <select required="true" name="vpacad">
+																																        <option value=""> - V.P Acad - </option>
+																																        <option value="dr">Dennis Ritche</option>
+																																								<option value="sj">Steve Jobs</option>
+																																				</select>
+																																</div>
+																											</div>
+																											
+																											<div class="6u">
+																                <div class="select-wrapper">
+																                    <select required="true" name="welfare">
+																																        <option value=""> - Welfare Officer - </option>
+																																        <option value="bc">Ben Carson</option>
+																																								<option value="db">David Beckham</option>
+																																				</select>
+																																</div>
+																											</div>
+																											
+																							
+																											<div class="6u">
+																                <div class="select-wrapper">
+																                    <select required="true" name="software">
+																																        <option value=""> - Software Dr - </option>
+																																        <option value="lt">Linus Tolvalds</option>
+																																								<option value="bg">Bill Gates</option>
+																																				</select>
+																																</div>
+																											</div>
+																											 
+																											<div class="6u">
+																                <div class="select-wrapper">
+																                    <select required="true" name="hardware">
+																																        <option value=""> - Hardware Dr - </option>
+																																        <option value="dp">David Packard</option>
+																																								<option value="md">Michael Dell</option>
+																																				</select>
+																																</div>
+																											</div>
+																											
+																											<div class="6u">
+																                <div class="select-wrapper">
+																                    <select required="true" name="social">
+																																        <option value=""> - Social Dr - </option>
+																																        <option value="kw">Kanye West</option>
+																																								<option value="nm">Nicki Minaj</option>
+																																				</select>
+																																</div>
+																											</div>
+																											
+																											<div class="6u">
+																                <div class="select-wrapper">
+																                    <select required="true" name="sports">
+																																        <option value=""> - Sports Dr. - </option>
+																																        <option value="cr7">Christiano Ronaldo</option>
+																																								<option value="lm">Lionel Messi</option>
+																																				</select>
+																																</div>
+																											</div>
+																											
+																											<div class="6u">
+																                <div class="select-wrapper">
+																                    <select required="true" name="gensec">
+																																        <option value=""> - General Sec - </option>
+																																        <option value="pp">Pamela Palmer</option>
+																																								<option value="dm">David Mark</option>
+																																				</select>
+																																</div>
+																											</div>
+																											
+																											<div class="6u">
+																                <div class="select-wrapper">
+																                    <select required="true" name="agensec">
+																																        <option value=""> - Asst Gen Sec - </option>
+																																        <option value="bl">Bobby Lush</option>
+																																								<option value="hk">Hillary King</option>
+																																				</select>
+																																</div>
+																											</div>
+																											
+																											<div class="6u">
+																                <div class="select-wrapper">
+																                    <select required="true" name="pro">
+																																        <option value=""> - P R O - </option>
+																																        <option value="fk">Fela Kuti</option>
+																																								<option value="lk">Luther King</option>
+																																				</select>
+																																</div>
+																											</div>
+																											
+																											<div class="6u">
+																                <div class="select-wrapper">
+																                    <select required="true" name="treasurer">
+																																        <option value=""> - Treasurer - </option>
+																																        <option value="ls">Lamido Sanusi</option>
+																																								<option value="mdz">Madueke Diezani</option>
+																																				</select>
+																																</div>
+																											</div>
+																											
+																							
+																											<div class="6u">
+																                <div class="select-wrapper">
+																                    <select required="true" name="lr1">
+																																        <option value=""> - Level Rep 1 - </option>
+																																        <option value="ot">Otedola Tosin</option>
+																																								<option value="ad">Aliu Dangote</option>
+																																				</select>
+																																</div>
+																											</div>
+																											
+																											<div class="6u">
+																                <div class="select-wrapper">
+																                    <select required="true" name="lr2">
+																																        <option value=""> - Level Rep 2 - </option>
+																																        <option value="so">Sammy Okocha</option>
+																																								<option value="om">Oyin Morgan</option>
+																																				</select>
+																																</div>
+																											</div>
+																											
+																											<div class="6u">
+																                <div class="select-wrapper">
+																                    <select required="true" name="lr3">
+																																        <option value=""> - Level Rep 3 - </option>
+																																        <option value="wg">Wole Gates</option>
+																																								<option value="ov">Osaji Valentine</option>
+																																				</select>
+																																</div>
+																											</div>
+																											
+																											<div class="6u">
+																                <div class="select-wrapper">
+																                    <select required="true" name="lr4">
+																																        <option value=""> - Level Rep 4 - </option>
+																																        <option value="ap">Ayorinde Precious</option>
+																																								<option value="og">Osilama Godspower</option>
+																																				</select>
+																																</div>
+																											</div>
+																											
+																        <div class="6u">
+																									<input type="text" name="token" placeholder="Your Token" required="true" />
+																								</div>
+																								
+																								<div class="3u$">
+																									<ul class="actions">
+																										<li><input type="submit" value="Vote" class="special" /></li>
+																									</ul>
+																								</div>
+																								
+																							</div>
+																						</form>
+																					</section>
+																
+																
+																				</div>
+																			</section>
+																
+																<!-- Footer -->
+																			<footer id="footer">
+																				<p class="copyright"><code>&copy; Designed By: <a href="/team">Team #Ruby</a></code></p>
+																			</footer>
+																
+																		<!-- Scripts -->
+																		<!-- Scripts -->
+																		<script src="{{url_for('static', filename='js/jquery.min.js') }}"></script>
+																		<script src="{{url_for('static', filename='js/jquery.scrolly.min.js') }}"></script>
+																		<script src="{{url_for('static', filename='js/skel.min.js') }}"></script>
+																		<script src="{{url_for('static', filename='js/main.js') }}"></script>
+																		<script src="{{url_for('static', filename='js/util.js') }}"></script>
+																
+																	</body>
+																</html>
+

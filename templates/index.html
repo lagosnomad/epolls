@@ -1,0 +1,78 @@
+
+																<!DOCTYPE HTML>
+																<html>
+																	<head>
+																		<title>E-Polls | Home </title>
+																		<meta charset="utf-8" />
+																		<meta name="viewport" content="width=device-width, initial-scale=1" />
+																		<script src="{{url_for('static', filename='/js/ie/html5shiv.js') }}"></script>
+																		<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.css') }}">
+																		<link rel="stylesheet" href="{{url_for('static', filename='css/main.css') }}">
+																		<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css') }}">
+																		<link rel="stylesheet" href="{{url_for('static', filename='css/font-awesome.css') }}">
+																									
+																		</head>
+																	<body id="top">
+																
+																		<!-- Header -->
+																			<header id="header">
+																				<div class="content">
+																					<h1><a href="/">E-Polls</a></h1>
+																					
+																					
+																					
+																								{% for message in get_flashed_messages() %}
+																												<p style="color: #cd1076;">{{message}}</p>
+																								{% endfor %}
+																								<p>Voting from anywhere ...</p>
+																					<ul class="actions">
+																						<li><a href="/vote" class="button special icon fa-forward">Continue</a></li>
+																						<li><a href="#register" class="button icon fa-chevron-down scrolly">Register</a></li>
+																					</ul>
+																				</div>
+																				<div class="image phone"><div class="inner"><img src="{{url_for('static', filename='img/epolls.png') }}" alt="epolls" /></div></div>
+																			</header>
+																
+																
+																
+																				<section id="register" class="wrapper">
+																				<div class="inner">
+																					<section>
+																						<form method="post" action="">
+																							<div class="row uniform">
+																								<div class="6u">
+																									<input type="text" name="fname" placeholder="Full Name" required="true" />
+																								</div>
+																								<div class="6u">
+																									<input type="text" name="matric" placeholder="Matric Number" required="true"/>
+																								</div>
+																								<div class="">
+																									<input type="checkbox" checked="checked">
+																									<label for="notrobot">Not a robot</label>
+																								</div>
+																								<div class="12u$">
+																									<ul class="actions">
+																										<li><input type="submit" value="Register" class="special" /></li>
+																									</ul>
+																								</div>
+																							</div>
+																						</form>
+																					</section>
+																				</div>
+																			</section>
+																
+																		<!-- Footer -->
+																			<footer id="footer">
+																				<p class="copyright"><code>&copy; Designed By: <a href="/team">Team #Ruby</a></code></p>
+																			</footer>
+																																						
+																		<!-- Scripts -->
+																		<script src="{{url_for('static', filename='js/jquery.min.js') }}"></script>
+																		<script src="{{url_for('static', filename='js/jquery.scrolly.min.js') }}"></script>
+																		<script src="{{url_for('static', filename='js/skel.min.js') }}"></script>
+																		<script src="{{url_for('static', filename='js/main.js') }}"></script>
+																		<script src="{{url_for('static', filename='js/util.js') }}"></script>
+																		
+																			
+																	</body>
+																</html>
